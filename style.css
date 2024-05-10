@@ -1,5 +1,6 @@
 * {
     color: rgb(116, 109, 109);
+    text-shadow: -1px 2px 4px rgba(0,0,0,0.27);
 }
 
 .menu {
@@ -48,6 +49,16 @@
 
 .inicio {
     font-family: "Press Start 2P", system-ui;
+    cursor: default;
+}
+
+.inicio p {
+    transition: all 1s;
+}
+
+.inicio p:hover {
+    opacity: 60%;
+    transition: all 1s;
 }
 
 .meio1 {
@@ -110,6 +121,7 @@
     transition: all 400ms;
     position: absolute;
     right: 0;
+    box-shadow: -15px 18px 46px -8px rgba(0,0,0,0.75);
 }
 
 .user p {
@@ -144,9 +156,6 @@
 .user img {
     border-radius: 100px;
     cursor: pointer;
-    display: grid;
-    place-items: end;
-    justify-content: end;
 }
 
 .user:hover {
@@ -158,4 +167,39 @@
 #info {
     position: absolute;
     text-decoration: none;
+}
+
+.boxwork {
+}
+
+.works h1{
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+    margin-top: 32%;
+    right: 0;
+    left: 0;
+}
+
+
+
+.works {
+    
+}
+
+.work1 img, .work2 img, .work3 img {
+    border-radius: 20px;
+    box-shadow: -15px 18px 46px -8px rgba(0,0,0,0.75);
+    transition: all 400ms;
+}
+
+.work1, .work2, .work3 {
+    display: inline;
+    margin: 50px 50px 50px 65px;
+    right: 0;
+}
+
+.work1 img:hover, .work2 img:hover, .work3 img:hover {
+    width: 500px;
+    height: 300px;
+    transition: all 400ms;
 }
